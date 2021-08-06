@@ -1,0 +1,8 @@
+spring:
+  cloud:
+    gateway:
+      routes:
+      - id: testRoute
+        uri: http://localhost:8901
+        predicates:
+        - Path=/test/path
